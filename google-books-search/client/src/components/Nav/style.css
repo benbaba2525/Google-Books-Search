@@ -9,28 +9,25 @@ nav.navbar {
 }
 #navbarSupportedContent{
     margin: auto;
-  }
+}
 
-.nav-link{
-    color: white;
+.brand-title{
     font-size: 25px;
+    padding: 10px;
 
 }
-.nav-link:hover {
+.heading-title {
+    font-size: 20px;
+
+}
+.nav-item:hover {
     color: rgb(0, 0, 0);
     background-color: rgba(51, 212, 59, 0.796);
     
 }
 
-.nav-item{
-    color: white;
+.nav-item {
     padding: 15px;
 }
 
 
-
-
-
-.active {
-            background-color:darkred;
-        }

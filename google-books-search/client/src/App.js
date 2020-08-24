@@ -5,6 +5,7 @@ import Nav from "./components/Nav"
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Jumbotron from "./components/Jumbotron";
+import Footer from "./components/Footer"
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             {/* renders the Saved page when "/saved" route is hit */}
             <Route exact path="/saved" component={Saved} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

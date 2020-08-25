@@ -56,7 +56,7 @@ export function BookListItem(props) {
                         <p>
                             Written By {[props.authors].flat().join(", ")}
                         </p>
-                        <p>
+                        <p class="description">
                             {props.description}
                         </p>
                         <a

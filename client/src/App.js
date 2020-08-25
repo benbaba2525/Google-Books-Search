@@ -14,6 +14,7 @@ class App extends Component {
         <div>
           <Nav />
           <Jumbotron />
+          <div class="wrapper">
           <Switch>
             {/* renders the Search page when "/" route is hit */}
             <Route exact path="/" component={Search} />
@@ -22,6 +23,7 @@ class App extends Component {
             {/* renders the Saved page when "/saved" route is hit */}
             <Route exact path="/saved" component={Saved} />
           </Switch>
+          </div>
           <Footer />
         </div>
       </Router>

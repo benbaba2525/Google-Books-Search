@@ -45,6 +45,7 @@ export function BookListItem(props) {
     };
 
     return (
+
         <li className="list-group-item" key={props.id}>
             <Container>
                 <Row>

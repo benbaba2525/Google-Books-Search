@@ -1,0 +1,33 @@
+nav.navbar {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    margin-bottom: 0;
+}
+.navDiv{
+    margin: auto;
+
+}
+#navbarSupportedContent{
+    margin: auto;
+}
+
+.brand-title{
+    font-size: 25px;
+    padding: 10px;
+
+}
+.heading-title {
+    font-size: 20px;
+
+}
+.nav-item:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(51, 212, 59, 0.796);
+    
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+

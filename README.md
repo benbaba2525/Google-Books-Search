@@ -12,9 +12,9 @@ GoogleBookSearchApp uses React to create React components, works with helper/uti
 
 This application requires at minimum 2 pages, check out the following mockup images for each page:
 
-Search - User can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
+`Search` - User can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
 
-Saved - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database.
+`Saved` - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database.
 
 1. Start by using the 07-Ins_Mern example as a base for your application.
 2. Add code to connect to a MongoDB database named googlebooks using the mongoose npm package.
@@ -36,62 +36,43 @@ Saved - Renders all books saved to the Mongo database. User has an option to "Vi
 }`
 
 5. Create a layout similar to the mockups displayed above. This should be a SPA (Single Page Application) that uses react-router-dom to navigate, hide and show your React components without changing the route within Express.
+- The layout should include at least two React Components for each page Search and Saved.
+- Feel free to try out alternative CSS framework to Bootstrap.
 
-
-
-The layout should include at least two React Components for each page Search and Saved.
-
-
-Feel free to try out alternative CSS framework to Bootstrap.
-
-
-
-Add the following Express routes for your app:
-
-
-
-/api/books (get) - Should return all saved books as JSON.
-
-
-/api/books (post) - Will be used to save a new book to the database.
-
-
-/api/books/:id (delete) - Will be used to delete a book from the database by Mongo _id.
-
-
-* (get) - Will load your single HTML page in client/build/index.html. Make sure you have this after all other routes are defined.
-
+6. Add the following Express routes for your app:
+- /api/books (get) - Should return all saved books as JSON.
+- /api/books (post) - Will be used to save a new book to the database.
+- /api/books/:id (delete) - Will be used to delete a book from the database by Mongo _id.
+- * (get) - Will load your single HTML page in client/build/index.html. Make sure you have this after all other routes are defined.
 
 Deploy your application to Heroku once complete. You must use Create React App and current versions of React and React-Router-Dom for this assignment.
 
+### Technologies Used
+- Bootstrap
+- CSS
+- React
+- ES6
+- Express.js
+- Node.js
+- NPM packages: React-router, Express, Axios
+- MongoDB
 
 
-## Learn More
+### Authors
+  - Kanyarut Pornamnuay
+  <br><a target="_blank" rel="nofollow" href="https://github.com/benbaba2525">Visit My Github Profile</a>
+  <br><a target="_blank" rel="nofollow" href="https://benbaba2525.github.io/My-Portfolio/">Visit My Portfolio</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Acknowledgments
+  - UCLA Coding Bootcamp   <a target="_blank" rel="nofollow" href="https://bootcamp.uclaextension.edu/coding/">Visit UCLA Coding Bootcamp</a>
 
-### Code Splitting
+### Helpful Links
+- <a target="_blank" rel="nofollow" href="https://reactrouter.com/">React Router</a>
+- <a target="_blank" rel="nofollow" href="https://create-react-app.dev/docs/proxying-api-requests-in-development/">React.js</a>
+- <a target="_blank" rel="nofollow" href="https://github.com/facebook/create-react-app">Proxying API Requests in Development</a>
+- <a target="_blank" rel="nofollow" href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/">React Lifecycle Methods Diagram</a>
+- <a target="_blank" rel="nofollow" href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">Presentation vs Container Components</a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
